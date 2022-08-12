@@ -8,7 +8,7 @@ export const getPosts = async () => {
       postsConnection {
         edges {
           node {
-            authors {
+            author {
                 bio
                 name
                 id
@@ -19,7 +19,7 @@ export const getPosts = async () => {
             createdAt
             slug
             title
-            excert
+            excerpt
             featuredImage {
               url
             }
