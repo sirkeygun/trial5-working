@@ -19,7 +19,7 @@ const PostWidget = ({ categories, slug }) => {
     }
   }, [slug])
 
-  console.log(relatedPosts);
+  
 
   return (
     <div className='bg-white shadow-lg rounded-lg p-8 mb-8'>
@@ -41,7 +41,7 @@ const PostWidget = ({ categories, slug }) => {
             <p className='text-grey-500 font-xs'>
               {moment(post.createdAt).format('MMM DD, YYYY')}
             </p>
-            <a href={'/post/${post.slug}'} key={post.title} classname='text-md'>
+            <a href={'/post/${post.slug}'} key={post.title} className='text-md'>
               {post.title}
             </a>
           </div>
